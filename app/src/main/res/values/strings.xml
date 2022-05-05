@@ -5,4 +5,6 @@
     <string name="create_card">Create Card</string>
     <string name="user_name">Nabin Chaudhary</string>
     <string name="todo">TODO</string>
+    <string name="previeous_frame">Previeous Frame</string>
+    <string name="next_frame">Next Frame</string>
 </resources>
