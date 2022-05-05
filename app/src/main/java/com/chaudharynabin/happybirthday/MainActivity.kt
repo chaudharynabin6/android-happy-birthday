@@ -1,9 +1,9 @@
 package com.chaudharynabin.happybirthday
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import com.chaudharynabin.happybirthday.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -19,9 +19,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun createBirthdayCard(view: View) {
-        var name = this.binding.nameEditText.editableText
+        val name = this.binding.nameEditText.editableText.toString()
 
-        Toast.makeText(this,"Name: $name",Toast.LENGTH_SHORT).show()
-
+//        Toast.makeText(this,"Name: $name",Toast.LENGTH_SHORT).show()
+        val intent = Intent(this,GreetingCard::class.java)
+        intent.putExtra(GreetingCard.NAME_EXTRAS,name)
+        this.startActivity(intent)
     }
 }

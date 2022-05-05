@@ -3,4 +3,6 @@
     <string name="enter_your_name">Enter Your Name</string>
     <string name="name">Name</string>
     <string name="create_card">Create Card</string>
+    <string name="user_name">Nabin Chaudhary</string>
+    <string name="todo">TODO</string>
 </resources>
