@@ -1,11 +1,16 @@
+
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
 }
 
 android {
     compileSdk 32
 
+    buildFeatures {
+        viewBinding true
+    }
     defaultConfig {
         applicationId "com.chaudharynabin.happybirthday"
         minSdk 29
